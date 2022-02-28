@@ -1,0 +1,89 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 812px;
+}
+
+main {
+  background-color: white;
+  margin: 147px 24px;
+  border-radius: 20px;
+}
+
+.card__img .women_online {
+  content: url(/images/illustration-woman-online-mobile.svg);
+  position: absolute;
+  width: 240px;
+  height: 180px;
+  top: 39px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card__img .shadow {
+  position: absolute;
+  content: url(/images/bg-pattern-mobile.svg);
+  top: 139px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card__img .cube {
+  display: none;
+}
+
+.card__accordeon {
+  padding: 135px 24px;
+}
+
+.card__accordeon h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4a4b5e;
+}
+
+.card__accordeon .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #787887;
+}
+
+.card__accordeon .container img {
+  width: 10px;
+  height: 7px;
+}
+
+.card__accordeon .question {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: solid 1px #e7e7e9;
+}
+
+.card__accordeon .answer {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */

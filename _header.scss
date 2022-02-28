@@ -1,0 +1,22 @@
+.card__img{
+    
+    .women_online{
+        content: url(/images/illustration-woman-online-mobile.svg);
+        position: absolute;
+        width: 240px;
+        height: 180px;
+        top: 39px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .shadow{
+        position: absolute;
+        content: url(/images/bg-pattern-mobile.svg);
+        top: 139px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .cube{
+        display: none;
+    }
+}
