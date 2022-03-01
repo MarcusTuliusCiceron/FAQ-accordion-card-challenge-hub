@@ -1,5 +1,6 @@
 .card__accordeon{
     padding: 135px 24px;
+    padding-bottom: 30px;
 
     h1{
         font-size: 32px;
@@ -12,10 +13,16 @@
         display: flex;
         justify-content: space-between;
         color: $darkGrayishBlue;
+        align-items: center;
+        text-decoration: none;
 
         img{
             width: 10px;
             height: 7px;
+            transition: all 200ms ease-in-out;
+        }
+        .openi{
+            transform: rotate(180deg);
         }
         
     }
@@ -26,9 +33,19 @@
         padding-top: 20px;
         border-bottom: solid 1px $lightGrayishBlue ;
     }
+    .openq{
+        font-weight: 700;
+        color: $veryDarkGrayishBlue;
+    }
 
     .answer{
         margin-top: 20px;
+        display: none;
+    }
+    .open{
+        margin-top: 20px;
+        display: block;
+        color: $darkGrayishBlue;
     }
     
 }
