@@ -4,7 +4,7 @@ html {
           box-sizing: border-box;
   font-size: 12px;
   font-family: 'Kumbh Sans', sans-serif;
-  min-height: 100vh;
+  color: #787887;
 }
 
 *, *::before, *::after {
@@ -15,100 +15,105 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
-  background: linear-gradient(#af67e9, #6565e7);
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
 }
 
 main {
-  background-color: white;
-  margin: 147px 24px;
-  margin-bottom: 85px;
-  border-radius: 20px;
-}
-
-.card__img .women_online {
-  content: url(/images/illustration-woman-online-mobile.svg);
-  position: absolute;
-  width: 240px;
-  height: 180px;
-  top: 39px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.card__img .shadow {
-  position: absolute;
-  content: url(/images/bg-pattern-mobile.svg);
-  top: 139px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.card__img .cube {
-  display: none;
-}
-
-.card__accordeon {
-  padding: 135px 24px;
-  padding-bottom: 30px;
-}
-
-.card__accordeon h1 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #4a4b5e;
-}
-
-.card__accordeon .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #787887;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  border-radius: 25px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 230px auto;
+  min-height: 500px;
 }
 
-.card__accordeon .container img {
-  width: 10px;
-  height: 7px;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+@media (min-width: 58.3125rem) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 230px;
+  }
 }
 
-.card__accordeon .container .openi {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.card__image {
+  max-width: 50%;
+  margin: auto;
+  top: -60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -46px;
 }
 
-.card__accordeon .question {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: solid 1px #e7e7e9;
+@media (min-width: 58.3125rem) {
+  .card__image {
+    min-width: 50%;
+  }
 }
 
-.card__accordeon .openq {
-  font-weight: 700;
-  color: #4a4b5e;
-}
-
-.card__accordeon .answer {
-  margin-top: 20px;
+.card__image .box {
   display: none;
 }
 
-.card__accordeon .open {
-  margin-top: 20px;
-  display: block;
-  color: #787887;
+@media (min-width: 58.3125rem) {
+  .card__image .box {
+    display: block;
+  }
+}
+
+.card__image .women {
+  top: -105px;
+  content: url(/images/illustration-woman-online-mobile.svg);
+  position: relative;
+  width: 240px;
+  height: 180px;
+}
+
+@media (min-width: 58.3125rem) {
+  .card__image .women {
+    content: url(/images/illustration-woman-online-desktop.svg);
+    width: 472px;
+    height: 359px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.card__image .shadow {
+  position: absolute;
+  width: 240px;
+  height: 106px;
+  content: url(/images/bg-pattern-mobile.svg);
+}
+
+@media (min-width: 58.3125rem) {
+  .card__image .shadow {
+    content: url(/images/bg-pattern-desktop.svg);
+  }
+}
+
+.card__image .womenshadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

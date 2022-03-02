@@ -1,0 +1,50 @@
+.card__image{
+    max-width: 50%;
+    margin: auto;
+    top: -60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -46px;
+    @include breakpoint-up(large){
+        min-width: 50%;
+        
+        
+    }
+    .box{
+        display: none;
+        @include breakpoint-up(large){
+            display: block;
+        }
+    }
+    .women{
+        top: -105px;
+        content: url(/images/illustration-woman-online-mobile.svg);
+        position: relative;
+        width: 240px;
+        height: 180px;
+
+        @include breakpoint-up(large){
+            
+            content: url(/images/illustration-woman-online-desktop.svg);
+            width: 472px;
+            height: 359px;
+            
+            transform: translateY(-50%);
+        }
+    }
+    .shadow{
+        position: absolute;
+        width: 240px;
+        height: 106px;
+        content: url(/images/bg-pattern-mobile.svg);
+        @include breakpoint-up(large){
+            content: url(/images/bg-pattern-desktop.svg);
+
+        }
+    }
+    .womenshadow{
+        display: flex;
+        flex-direction: column;
+    }
+}
