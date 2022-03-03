@@ -1,50 +1,61 @@
-.card__image{
-    max-width: 50%;
-    margin: auto;
-    top: -60%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -46px;
-    @include breakpoint-up(large){
-        min-width: 50%;
-        
-        
-    }
-    .box{
+.card{
+    background-color: white;
+    border-radius: 2rem;
+    max-width: 56rem;
+
+    &__box{
         display: none;
-        @include breakpoint-up(large){
-            display: block;
-        }
     }
-    .women{
-        top: -105px;
-        content: url(/images/illustration-woman-online-mobile.svg);
-        position: relative;
-        width: 240px;
-        height: 180px;
+    &__image{
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 25rem;
+        }
 
-        @include breakpoint-up(large){
-            
-            content: url(/images/illustration-woman-online-desktop.svg);
-            width: 472px;
-            height: 359px;
-            
-            transform: translateY(-50%);
-        }
     }
-    .shadow{
-        position: absolute;
-        width: 240px;
-        height: 106px;
-        content: url(/images/bg-pattern-mobile.svg);
-        @include breakpoint-up(large){
-            content: url(/images/bg-pattern-desktop.svg);
 
-        }
+    &__text{
+
     }
-    .womenshadow{
+
+}
+
+@include breakpoint-up(large){
+    .card{
         display: flex;
-        flex-direction: column;
+        position: relative;
+        margin: 6rem auto;
+        padding-right: 2rem;
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: -13% center;
+        &__image{
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            img{
+                transform: translateX(-4rem);
+                width: 100%;
+                height: auto;
+                //max-width: 25rem;
+            }
+        }
+        &__box{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 57%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+        }
     }
+    .card__image{
+        flex: 1;
+    }
+    .card__text{
+        flex: 1;
+    }
+    
 }

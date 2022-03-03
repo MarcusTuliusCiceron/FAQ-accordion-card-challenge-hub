@@ -1,34 +1,21 @@
 html{
+    
     font-size: 100%;
     box-sizing: border-box;
     font-size: 12px;
-    font-family: 'Kumbh Sans', sans-serif;
-    //min-height: 100vh;
-    color: $darkGrayishBlue;
     
+    color: $darkGrayishBlue;
     
 }
 
 *, *::before, *::after { 
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
 }
 body{
-    padding: 20px;
-    background-image: linear-gradient($softViolet, $softBlue);
+    padding: 3rem;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient($softViolet, $softBlue );
 }
-main{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 25px;
-    flex-direction: column;
-    margin: 230px auto;
-    min-height: 500px;
-    @include breakpoint-up(large){
-        flex-direction: row;
-        margin: 230px;
-    }
-    
-}
+
