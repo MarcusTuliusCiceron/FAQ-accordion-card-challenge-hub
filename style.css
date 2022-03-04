@@ -2,12 +2,6 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 12px;
-<<<<<<< HEAD
-  color: #787887;
-=======
-  font-family: 'Kumbh Sans', sans-serif;
->>>>>>> parent of 0da2306 (Script completed)
 }
 
 *, *::before, *::after {
@@ -16,127 +10,112 @@ html {
 }
 
 body {
-<<<<<<< HEAD
   padding: 3rem;
   margin: 0;
   font-family: 'Kumbh Sans', sans-serif;
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background-image: linear-gradient(#af67e9, #6565e7);
-=======
-  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
-  background: linear-gradient(#af67e9, #6565e7);
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 812px;
->>>>>>> parent of 0da2306 (Script completed)
 }
 
 .card {
   background-color: white;
-<<<<<<< HEAD
-  border-radius: 2rem;
-  max-width: 56rem;
-=======
-  margin: 147px 24px;
-  border-radius: 20px;
->>>>>>> parent of 0da2306 (Script completed)
-}
-
-.card__box {
-  display: none;
-}
-
-<<<<<<< HEAD
-.card__image img {
-  width: 100%;
-  height: auto;
-  max-width: 25rem;
-}
-
-@media (min-width: 58.3125rem) {
-  .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    margin: 6rem auto;
-    padding-right: 2rem;
-    background-image: url(/images/bg-pattern-desktop.svg);
-    background-size: 45%;
-    background-repeat: no-repeat;
-    background-position: -13% center;
-    width: 53rem;
-  }
-  .card__image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
-  }
-  .card__image img {
-    -webkit-transform: translateX(-4rem);
-            transform: translateX(-4rem);
-    width: 100%;
-    height: auto;
-  }
-  .card__box {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 57%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    z-index: 1;
-  }
-  .card__image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .card__text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-=======
-.card__accordeon {
-  padding: 135px 24px;
-}
-
-.card__accordeon h1 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #4a4b5e;
-}
-
-.card__accordeon .container {
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 1.5rem;
+  max-width: 57.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #787887;
+  position: relative;
+  min-height: 400px;
 }
 
-.card__accordeon .container img {
-  width: 10px;
-  height: 7px;
+@media (max-width: 64rem) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.card__accordeon .question {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: solid 1px #e7e7e9;
+.card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.card__accordeon .answer {
-  margin-top: 20px;
->>>>>>> parent of 0da2306 (Script completed)
+@media (max-width: 64rem) {
+  .card__text {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+}
+
+.card__image {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right 78px bottom 29%;
+}
+
+@media (max-width: 64rem) {
+  .card__image {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    overflow: visible;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-position: right 50% bottom 118%;
+    max-height: 130px;
+  }
+}
+
+.card__image img {
+  position: relative;
+  left: -15%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 470px;
+  height: auto;
+}
+
+@media (max-width: 64rem) {
+  .card__image img {
+    content: url(/images/illustration-woman-online-mobile.svg);
+    margin: 0 auto;
+    max-width: 80%;
+    min-width: 45%;
+    width: 230px;
+    top: 0;
+    -webkit-transform: translateX(-50%) translateY(-55%);
+            transform: translateX(-50%) translateY(-55%);
+    left: 50%;
+  }
+}
+
+.card__image__shadow {
+  position: absolute;
+}
+
+.card__box {
+  position: absolute;
+  z-index: 1;
+  top: 43%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 64rem) {
+  .card__box {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
