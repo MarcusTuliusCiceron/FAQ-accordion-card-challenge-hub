@@ -1,4 +1,14 @@
-<<<<<<< HEAD
-console.log('test');
-=======
->>>>>>> parent of 0da2306 (Script completed)
+document.querySelectorAll('.accordion__item__question').forEach(item =>{
+    item.addEventListener('click', event => {
+        console.log('click');
+        if (item.classList.contains('active')){
+            item.classList.remove('active')
+            item.nextElementSibling.classList.add('hidden')
+        }
+        else{
+            item.classList.add('active')
+            item.nextElementSibling.classList.remove('hidden')
+        }
+        
+    })
+})

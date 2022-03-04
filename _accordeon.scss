@@ -1,1 +1,65 @@
+.card__text{
+    color: $veryDarkGrayishBlue;
+    h1{
+        text-align: center;
+        margin-top: 67px;
+        margin-bottom: 47px;
+        color: $veryDarkDesaturatedBlue;
+        @include breakpoint-down(medium){
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
 
+.accordion{
+    margin-right: 95px;
+    margin-bottom: 93px;
+    @include breakpoint-down(medium){
+        margin: 43px 20px;
+    }
+
+    &__item{
+        border-bottom: solid 1px $lightGrayishBlue;
+        margin-bottom: 17px;
+        &__question{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &:hover{
+                cursor: pointer;
+                color: $softRed;
+            }
+            img{
+                width:11px;
+                height: 9px;
+            }
+        }
+        &__answer{
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: $darkGrayishBlue;
+        }
+    }
+    .hidden{
+        transition: all 200ms ease-in-out;
+        height: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    .active{
+        color: $veryDarkDesaturatedBlue;
+        font-weight: 700;
+        transition: all 200ms ease-in-out;
+        &:hover{
+            color: $softRed;
+        }
+        img{
+            transition: all 200ms ease-in-out;
+            transform: rotate(180deg);
+        }
+    }
+}

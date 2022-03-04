@@ -1,0 +1,75 @@
+.card{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 1.5rem;
+    max-width: 57.5rem;
+    display: flex;
+    position: relative;
+    min-height: 400px;
+
+    @include breakpoint-down(medium){
+        flex-direction: column;
+    }
+    
+
+    &__text{
+        flex: 1;
+        @include breakpoint-down(medium){
+            flex: auto;
+        }
+    }
+    &__image{
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right 78px bottom 29%;
+
+        @include breakpoint-down(medium){
+            flex: auto;
+            overflow: visible;
+            background-image: url(/images/bg-pattern-mobile.svg);
+            background-position: right 50% bottom 118%;
+            max-height: 130px;
+        }
+
+        img{
+            position: relative;
+            left: -15%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 470px;
+            height: auto;
+
+            @include breakpoint-down(medium){
+                content: url(/images/illustration-woman-online-mobile.svg);
+                margin: 0 auto;
+                 
+                max-width: 80%;
+                min-width: 45%;
+                width: 230px;
+                
+                top: 0;
+                transform: translateX(-50%) translateY(-55%);
+                left: 50%;
+
+            }
+        }
+
+        &__shadow{
+            position: absolute;
+        }
+    }
+    &__box{
+        position: absolute;
+        z-index: 1;
+        top: 43%;
+        transform: translateX(-50%);
+        @include breakpoint-down(medium){
+            display: none;
+        }
+    }
+
+}
