@@ -35,6 +35,7 @@
             img{
                 width:11px;
                 height: 9px;
+                transition: all 200ms ease-in-out;
             }
         }
         &__answer{
@@ -44,7 +45,7 @@
         }
     }
     .hidden{
-        transition: all 200ms ease-in-out;
+        
         height: 0;
         margin-bottom: 0;
         overflow: hidden;
@@ -53,13 +54,18 @@
     .active{
         color: $veryDarkDesaturatedBlue;
         font-weight: 700;
-        transition: all 200ms ease-in-out;
+        
         &:hover{
             color: $softRed;
         }
         img{
-            transition: all 200ms ease-in-out;
+            
             transform: rotate(180deg);
         }
+    }
+    .opening{
+        height: auto;
+        overflow: hidden;
+        transition: height 200ms ease;
     }
 }
