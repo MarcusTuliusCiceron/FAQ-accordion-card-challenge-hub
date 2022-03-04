@@ -3,8 +3,13 @@ html{
     font-size: 100%;
     box-sizing: border-box;
     font-size: 12px;
+<<<<<<< HEAD
     
     color: $darkGrayishBlue;
+=======
+    font-family: 'Kumbh Sans', sans-serif;
+
+>>>>>>> parent of 0da2306 (Script completed)
     
 }
 
@@ -12,6 +17,7 @@ html{
     box-sizing: inherit;
 }
 body{
+<<<<<<< HEAD
     padding: 3rem;
     margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
@@ -19,3 +25,15 @@ body{
     background-image: linear-gradient($softViolet, $softBlue );
 }
 
+=======
+    background: linear-gradient($softViolet, $softBlue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 812px;
+}
+main{
+    background-color: white;
+    margin: 147px 24px;
+    border-radius: 20px;
+}
+>>>>>>> parent of 0da2306 (Script completed)

@@ -3,7 +3,11 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 12px;
+<<<<<<< HEAD
   color: #787887;
+=======
+  font-family: 'Kumbh Sans', sans-serif;
+>>>>>>> parent of 0da2306 (Script completed)
 }
 
 *, *::before, *::after {
@@ -12,24 +16,38 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   padding: 3rem;
   margin: 0;
   font-family: 'Kumbh Sans', sans-serif;
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background-image: linear-gradient(#af67e9, #6565e7);
+=======
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 812px;
+>>>>>>> parent of 0da2306 (Script completed)
 }
 
 .card {
   background-color: white;
+<<<<<<< HEAD
   border-radius: 2rem;
   max-width: 56rem;
+=======
+  margin: 147px 24px;
+  border-radius: 20px;
+>>>>>>> parent of 0da2306 (Script completed)
 }
 
 .card__box {
   display: none;
 }
 
+<<<<<<< HEAD
 .card__image img {
   width: 100%;
   height: auto;
@@ -84,5 +102,41 @@ body {
         -ms-flex: 1;
             flex: 1;
   }
+=======
+.card__accordeon {
+  padding: 135px 24px;
+}
+
+.card__accordeon h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4a4b5e;
+}
+
+.card__accordeon .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #787887;
+}
+
+.card__accordeon .container img {
+  width: 10px;
+  height: 7px;
+}
+
+.card__accordeon .question {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: solid 1px #e7e7e9;
+}
+
+.card__accordeon .answer {
+  margin-top: 20px;
+>>>>>>> parent of 0da2306 (Script completed)
 }
 /*# sourceMappingURL=style.css.map */
