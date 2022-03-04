@@ -48,6 +48,7 @@ body {
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: -13% center;
+    width: 53rem;
   }
   .card__image {
     display: -webkit-box;
